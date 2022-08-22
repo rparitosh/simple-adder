@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout scm
                 echo 'Building..'
-                call build.bat
+                call 'build.bat'
             }
         }
         stage('Test') {
