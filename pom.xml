@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.paritosh.learning</groupId>
     <artifactId>simple-adder</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>simple-adder</name>
     <description>simple-adder</description>
     <properties>
