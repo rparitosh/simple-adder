@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: addder-service
+      app: adder-service
   template:
     metadata:
       labels:
-        app: addder-service
+        app: adder-service
     spec:
       containers:
       - name: adder-service
