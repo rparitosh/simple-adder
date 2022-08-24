@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adder-service-deployment
+  labels:
+    app: addder-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: addder-service
+  template:
+    metadata:
+      labels:
+        app: addder-service
+    spec:
+      containers:
+      - name: adder-service
+        image: rparitosh/adder-service
+        ports:
+          - containerPort: 9001
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: adder-service
+spec:
+  selector:
+    app: adder-service
+  ports:
+  - port: 9001
+    targetPort: 9001 
+
+          
+    
+    
+
