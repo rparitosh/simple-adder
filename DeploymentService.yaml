@@ -17,6 +17,7 @@ spec:
       containers:
       - name: adder-service
         image: rparitosh/simple-adder-service:LATEST
+        imagePullPolicy: Always
         ports:
           - containerPort: 9001
 ---
