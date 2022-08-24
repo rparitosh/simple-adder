@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: adder-service-deployment
   labels:
-    app: addder-service
+    app: adder-service
 spec:
   replicas: 2
   selector:
