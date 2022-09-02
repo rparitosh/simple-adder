@@ -16,8 +16,7 @@ public class AdditionController {
     AdditionService additionService;
 
     @GetMapping("/add")
-    public String add(@RequestParam int a,@RequestParam int b) throws UnknownHostException {
-        String hostname = InetAddress.getLocalHost().getHostName();
-        return ("hostname = " + hostname + " Answer =" + additionService.add(a,b));
+    public int add(@RequestParam int a,@RequestParam int b) throws UnknownHostException {
+        return (additionService.add(a,b));
     }
 }
